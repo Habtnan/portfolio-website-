@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            background-color: bisque;
+        }
+        .navbar{
+            display: flex;
+            height: 100px;
+            background-color: blueviolet;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .navbar li {
+            font-size: larger;
+            font-weight: 700;
+            list-style: none;
+            padding: 20px;
+        }
+
+        .container{
+            display: flex;
+            gap: 10px;
+            background-color: grey;
+            justify-content: center;
+            
+            align-items: center;
+        }
+
+        .items{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            margin: 10px;
+        }
+
+        .bottom{
+            display: flex;
+           
+        }
+
+       
+
+        /* Selects only the second item */
+.bottom .left:nth-child(2) {
+  flex-grow: 2; /* This item will take twice the space compared to others */
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        
+            <li>Home</li>
+            <li>About me</li>
+            <li>Projects</li>
+            <li>Skill</li>
+            <li>Contact</li>
+        
+    </div>
+
+    <div class="container">
+        <div class="items">
+            <div style= "width: 200px; height: 100px; background-color: green;"></div>
+            <div style= "width: 200px; height: 100px; background-color: yellow;"></div>
+            <div style= "width: 200px; height: 100px; background-color: red;"></div>
+        </div>
+        <div class="items">
+            <div style= "width: 200px; height: 100px; background-color: green;"></div>
+            <div style= "width: 200px; height: 100px; background-color: yellow;"></div>
+            <div style= "width: 200px; height: 100px; background-color: red;"></div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="left" style= "width: 200px; height: 1000px; background-color: green;"></div>
+        <div class="left" style= "width: 200px; height: 1000px; background-color: yellow;"></div>
+    </div>
+</body>
+</html>
